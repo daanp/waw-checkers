@@ -2,11 +2,14 @@
   "name": "wawcheckers",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "solution.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jasmine-node": "^3.0.0"
+  }
 }
