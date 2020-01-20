@@ -6,7 +6,6 @@ describe('solution', () => {
         B[0] = ['.', '.', '.']
         B[1] = ['.', 'X', '.']
         B[2] = ['O', '.', '.']
-
         expect(solution(B)).toEqual(1);
     })
 
@@ -42,6 +41,17 @@ describe('solution', () => {
         B[0] = ['.', '.', 'X']
         B[1] = ['.', 'X', '.']
         B[2] = ['O', '.', '.']
+
+        expect(solution(B)).toEqual(0);
+    })
+
+    it('should return 0 when there are no options to beat any pawns', () => {
+        let B = [];
+        B[0] = "X...."
+        B[1] = ".X..."
+        B[2] = "..O.."
+        B[3] = "...X."
+        B[4] = "....."
 
         expect(solution(B)).toEqual(0);
     })
