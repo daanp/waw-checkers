@@ -5,7 +5,7 @@ describe('solution', () => {
         let B = []
         B[0] = ['.', '.', '.']
         B[1] = ['.', 'X', '.']
-        B[1] = ['O', '.', '.']
+        B[2] = ['O', '.', '.']
 
         expect(solution(B)).toEqual(1);
     })
@@ -14,7 +14,7 @@ describe('solution', () => {
         let B = []
         B[0] = ['.', '.', '.']
         B[1] = ['.', '.', 'X']
-        B[1] = ['.', 'O', '.']
+        B[2] = ['.', 'O', '.']
 
         expect(solution(B)).toEqual(0);
     })
@@ -23,7 +23,7 @@ describe('solution', () => {
         let B = []
         B[0] = ['.', '.', '.']
         B[1] = ['.', 'X', '.']
-        B[1] = ['.', 'O', '.']
+        B[2] = ['.', 'O', '.']
 
         expect(solution(B)).toEqual(0);
     })
@@ -32,7 +32,7 @@ describe('solution', () => {
         let B = []
         B[0] = ['.', '.', 'X']
         B[1] = ['.', 'O', '.']
-        B[1] = ['.', '.', '.']
+        B[2] = ['.', '.', '.']
 
         expect(solution(B)).toEqual(0);
     })
@@ -41,7 +41,7 @@ describe('solution', () => {
         let B = []
         B[0] = ['.', '.', 'X']
         B[1] = ['.', 'X', '.']
-        B[1] = ['O', '.', '.']
+        B[2] = ['O', '.', '.']
 
         expect(solution(B)).toEqual(0);
     })
