@@ -1,6 +1,15 @@
 let solution = require('../solution.js');
 
 describe('solution', () => {
+    it('should allow Js pawn to take As pawn when it is legal', () => {
+        let B = []
+        B[0] = ['.', '.', '.']
+        B[1] = ['.', 'X', '.']
+        B[1] = ['O', '.', '.']
+
+        expect(solution(B)).toEqual(1);
+    })
+
     it('should not allow Js pawn to take As pawn when it is against the wall', () => {
         let B = []
         B[0] = ['.', '.', '.']
