@@ -2,13 +2,7 @@ function solution(board, position = null) {
 
     //Get initial position of Jafar's pawn on first call
     if (!position) {
-        position = {};
-        for (let i = 0; i < board.length; i++) {
-            if (board[i].indexOf('O') >= 0) {
-                position.x = board[i].indexOf('O');
-                position.y = i;
-            }
-        }
+        position = getPosition(position, board);
     }
 
     const legalMoves = getLegalMoves(position, board);
@@ -76,6 +70,17 @@ function getLegalMoves(position, board) {
     })
 
     return legalMoves;
+}
+
+function getPosition(position, board) {
+    position = {};
+    for (let i = 0; i < board.length; i++) {
+        if (board[i].indexOf('O') >= 0) {
+            position.x = board[i].indexOf('O');
+            position.y = i;
+        }
+    }
+    return position;
 }
 
 function beatPawn(position, move, board) {
